@@ -88,9 +88,9 @@ function manageLicenses(){
 function updateSkus(){
 	var prodID = document.getElementById("prodid").value;
 	if (prodID=='Google-Coordinate'){
-		var skuList = ['Google-Coordinate'];
+		var skuList = 'Google-Coordinate';
 	} else if (prodID == "Google-Drive-storage"){
-		var skuList = [
+		var skuList = 
 		'Google-Drive-storage-20GB',
 		'Google-Drive-storage-50GB',
 		'Google-Drive-storage-200GB',
@@ -100,7 +100,7 @@ function updateSkus(){
 		'Google-Drive-storage-4TB',
 		'Google-Drive-storage-8TB',
 		'Google-Drive-storage-16TB'
-		]
+		
 	}
 	var skuPicker = "";
 	for (sku in skuList){
